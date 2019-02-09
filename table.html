@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Table Quiz</title>
+	<link rel="icon" href="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_M_blue-512.png">
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+<body>
+	<table>
+		<tr>
+			<th>
+			<button onclick="a()">
+				<img id="back1" src="img/trump.jpg">
+				<img id="a" src="img/question_mark.png">
+			</button>
+
+			<button onclick="b()">
+				<img id="back2" src="img/statue.jpg">
+				<img id="b" src="img/question_mark.png">
+			</button>
+
+			<button onclick="c()">
+				<img id="back3" src="img/shawshank.jpg">
+				<img id="c" src="img/question_mark.png">
+			</button>
+
+			</th>
+		</tr>
+
+		<tr>
+			<th>
+			<button onclick="d()">
+				<img id="back4" src="img/rma.png">
+				<img id="d" src="img/question_mark.png">
+			</button>
+
+			<button onclick="e()">
+				<img id="back5" src="img/despacito.jpg">
+				<img id="e" src="img/question_mark.png">
+			</button>
+
+			<button onclick="f()">
+				<img id="back6" src="img/ronaldo.jpg">
+				<img id="f" src="img/question_mark.png">
+			</button>
+			</th>
+		</tr>
+		
+		<tr>
+			<th>
+			<button onclick="g()">
+				<img id="back7" src="img/shanghai.jpg">
+				<img id="g" src="img/question_mark.png">
+			</button>
+
+			<button onclick="h()">
+				<img id="back8" src="img/usa.jpg">
+				<img id="h" src="img/question_mark.png">
+			</button>
+
+			<button onclick="i()">
+				<img id="back9" src="img/linux.png">
+				<img id="i" src="img/question_mark.png">
+			</button>
+			</th>
+		</tr>
+	</table>
+	<form name="f1">
+		<h2>Question: </h2>
+		<input id="question" type="text" name="question" readonly="readonly" placeholder="Click on image...">
+		<br>
+		<h2>Answer: </h2>
+		<input id="answerBox" type="text" name="answer" placeholder="Enter answer...">
+		<br> 
+		<input type="button" value="Submit" onclick="Submit()">
+	</form>
+	<p><span class="punoi">Punoi: Marsid Zyberi</span></p>
+</body>
+</html>
