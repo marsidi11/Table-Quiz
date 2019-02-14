@@ -25,35 +25,38 @@ function h() {
 function i() {
 	document.getElementById("question").value = "Which one is the first 64-bit operating system?";
 }
+
 function Submit() {
 	var able = document.f1.answer.value;
+	able = able.toUpperCase()
+	
 			document.getElementById("answerBox").value = "";
 	if (able == "Donald Trump") {
 		document.getElementById("back1").style.visibility = "visible";
 	}
 
-	else if (able == "New York") {
+	else if (able == "NEW YORK") {
 		document.getElementById("back2").style.visibility = "visible";
 	}
 
-	else if (able == "The Shawshank Redemption") {
+	else if (able == "THE SHAWSHANK REDEMPTION") {
 		document.getElementById("back3").style.visibility = "visible";
 	}
 
-	else if (able == "Real Madrid") {
+	else if (able == "REAL MADRID") {
 		document.getElementById("back4").style.visibility = "visible";
 		document.getElementById("d").style.visibility = "hidden";
 	}
 
-	else if (able == "Despacito") {
+	else if (able == "DESPACITO") {
 		document.getElementById("back5").style.visibility = "visible";
 	}
 
-	else if (able == "Cristiano Ronaldo") {
+	else if (able == "CRISTIANO RONALDO") {
 		document.getElementById("back6").style.visibility = "visible";
 	}
 
-	else if (able == "Shanghai") {
+	else if (able == "SHANGHAI") {
 		document.getElementById("back7").style.visibility = "visible";
 	}
 
@@ -61,7 +64,7 @@ function Submit() {
 		document.getElementById("back8").style.visibility = "visible";
 	}
 
-	else if (able == "Linux") {
+	else if (able == "LINUX") {
 		document.getElementById("back9").style.visibility = "visible";
 		document.getElementById("i").style.visibility = "hidden";
 	}
