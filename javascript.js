@@ -1,3 +1,5 @@
+// Show Question
+
 function a() {
 	document.getElementById("question").value = "Who is president of USA?";
 }
@@ -26,11 +28,13 @@ function i() {
 	document.getElementById("question").value = "Which one is the first 64-bit operating system?";
 }
 
-function Submit() {
+// Check if Answer is Right
+
+function check() {
 	var able = document.f1.answer.value;
 	able = able.toUpperCase()
 	
-			document.getElementById("answerBox").value = "";
+	document.getElementById("answerBox").value = "";
 	if (able == "Donald Trump") {
 		document.getElementById("back1").style.visibility = "visible";
 	}
@@ -71,5 +75,19 @@ function Submit() {
 
 	else {
 		alert("Wrong! Try Again.")
+	}
+}
+
+// Submit Button
+
+function Submit() {
+	check();
+}
+
+// Enter Key
+
+function keyDown() {
+	if (event.keyCode == 13) {
+		check();
 	}
 }
