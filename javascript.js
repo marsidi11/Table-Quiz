@@ -3,7 +3,7 @@
 function shuffle(arr) {
 	for (var i = arr.length - 1; i > 0; i--) {
 		var m = Math.floor(Math.random() * (i + 1));
-		[arr[i], arr[m]] = [arr[m], arr[i]];
+		arr[i], arr[m] = arr[m], arr[i];
 	}
 }
 
@@ -43,7 +43,7 @@ var ques = {
 
 // Object To Array
 
-var obj = Object.values(ques);
+var obj = myObjects = Object.keys(ques).map(function(itm) { return ques[itm]; });
 
 // Shuffling List to get random questions from {object}
 
@@ -102,31 +102,31 @@ var rand27 = questions.indexOf(ques.q27);
 // Show Question
 
 function a() {
-	document.getElementById("question").value = questions[0];
+	document.f1.question.value = questions[0];
 }
 function b() {
-	document.getElementById("question").value = questions[1];
+	document.f1.question.value = questions[1];
 }
 function c() {
-	document.getElementById("question").value = questions[2];
+	document.f1.question.value = questions[2];
 }
 function d() {
-	document.getElementById("question").value = questions[3];
+	document.f1.question.value = questions[3];
 }
 function e() {
-	document.getElementById("question").value = questions[4];
+	document.f1.question.value = questions[4];
 }
 function f() {
-	document.getElementById("question").value = questions[5];
+	document.f1.question.value = questions[5];
 }
 function g() {
-	document.getElementById("question").value = questions[6];
+	document.f1.question.value = questions[6];
 }
 function h() {
-	document.getElementById("question").value = questions[7];
+	document.f1.question.value = questions[7];
 }
 function i() {
-	document.getElementById("question").value = questions[8];
+	document.f1.question.value = questions[8];
 }
 
 // Check if Answer is Right
