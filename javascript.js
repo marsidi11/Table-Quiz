@@ -3,9 +3,10 @@
 function shuffle(arr) {
 	for (var i = arr.length - 1; i > 0; i--) {
 		var m = Math.floor(Math.random() * (i + 1));
-		arr[i], arr[m] = arr[m], arr[i];
+		[arr[i], arr[m]] = [arr[m], arr[i]];
 	}
 }
+
 
 // Questions List
 
@@ -43,13 +44,15 @@ var ques = {
 
 // Object To Array
 
-var obj = myObjects = Object.keys(ques).map(function(itm) { return ques[itm]; });
+var obj = Object.keys(ques).map(function(itm) { return ques[itm]; });
 
 // Shuffling List to get random questions from {object}
 
 var list = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27];
-shuffle(list);	
 
+shuffle(list);
+
+console.log(list[0], list[2])
 // List Random // To Show Questions
 
 var m0 = list[0];
