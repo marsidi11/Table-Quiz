@@ -58,7 +58,36 @@ input {
 #question {
 	width: 380px;
 }
+#top-title {
+	display: none;
+}
 img {
 	width: 100px;
 	height: 100px;
+}
+
+@media (max-width: 1000px) {
+	#top-title {
+		display: inline;
+	}
+	table {
+		width: 35%;
+	}
+	button {
+		width: 130px;
+		height: 130px;
+	}
+	form {
+		width: 30%;
+		position: absolute;
+		top: 83%;
+		right: 88%;
+	}
+	input {
+		font-size: 16px;
+	}
+	#question {
+		font-size: 14px;
+		width: 240px;
+	}
 }
